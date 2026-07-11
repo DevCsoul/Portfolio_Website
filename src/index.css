@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Geist Pixel", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-orange: #ef3801;
+
+  --animate-fade-in: fade-in 1s ease-out forwards;
+  --animate-fade-in-up: fade-in-up 1.2s ease-out forwards;
+  --animate-fade-in-up-slow: fade-in-up 1s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
