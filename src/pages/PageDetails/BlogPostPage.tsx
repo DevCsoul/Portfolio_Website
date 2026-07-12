@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
+import { useState } from 'react'
 import PageContainer from '../../components/PageContainer'
 import { blogPosts } from '../../data/blog'
 import Footer from '../../components/Footer'
@@ -6,6 +7,17 @@ import Footer from '../../components/Footer'
 export default function BlogPostPage() {
   const { id } = useParams<{ id: string }>()
   const post = blogPosts.find((p) => p.id === id)
+  const [copied, setCopied] = useState(false)
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // Clipboard API unavailable or blocked; silently ignore.
+    }
+  }
 
   if (!post) {
     return (
@@ -59,6 +71,21 @@ export default function BlogPostPage() {
           {paragraphs.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
+        </div>
+
+        <hr className="mt-10 border-white/15" />
+
+        <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <span className="font-mono text-sm text-white/40">Enjoyed this? Share it around.</span>
+
+          <button
+            type="button"
+            onClick={handleCopyLink}
+            className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 font-mono text-sm tracking-wide text-white/90 transition-colors duration-300 hover:border-orange hover:text-orange"
+          >
+            {copied ? 'Link copied' : 'Copy link'}
+            <i className={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'}></i>
+          </button>
         </div>
       </article>
     </PageContainer>
