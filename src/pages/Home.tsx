@@ -3,8 +3,8 @@ import Hero from './Hero'
 import About from './About'
 import Blog from './Blog'
 import Projects from './Projects'
-import Experience from './Experience'
-import Stack from './Stack'
+import ExperienceStack from './ExperienceStack'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
       <About />
       <Blog />
       <Projects />
-      <Experience />
-      <Stack />
+      <ExperienceStack />
+      <Footer />
     </>
   )
 }

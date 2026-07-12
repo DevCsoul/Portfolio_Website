@@ -30,7 +30,7 @@ export const experience: ExperienceEntry[] = [
     initials: 'RD',
     type: 'Freelance',
     role: 'Frontend & Support Developer',
-    dates: 'NOV 2025 - PRESENT',
+    dates: 'NOV 2025 - JAN 2026',
     description: [
       'Built a modular, reusable CMS using React.js components, enabling non-technical staff to manage content independently.',
       'Designed a high-conversion landing page optimized for cross-device performance, ensuring a seamless user journey for mobile and desktop visitors.',
@@ -84,15 +84,53 @@ export const experience: ExperienceEntry[] = [
 
 export const stack: string[] = [
   'TypeScript',
-  'React',
+  'JavaScript',
+  'React.js',
   'Next.js',
+  'Vue.js',
   'Node.js',
-  'Python',
+  'Express.js',
   'Laravel',
-  'PostgreSQL',
-  'AWS',
-  'Docker',
-  'Kubernetes',
-  'PyTorch',
-  'Claude Code',
+  'MongoDB',
+  'MySQL',
+  'Tailwind CSS',
+  'Git',
+]
+
+export type StackCategory = {
+  label: string
+  items: string[]
+}
+
+export const stackCategories: StackCategory[] = [
+  {
+    label: 'Frontend',
+    items: [
+      'HTML5',
+      'CSS3',
+      'JavaScript (ES2015+)',
+      'TypeScript',
+      'React.js',
+      'Next.js',
+      'Vue.js',
+      'Tailwind CSS',
+      'Bootstrap',
+    ],
+  },
+  {
+    label: 'Backend',
+    items: ['Node.js', 'Express.js', 'Laravel', 'PHP', 'Electron.js'],
+  },
+  {
+    label: 'Databases',
+    items: ['MongoDB', 'MySQL'],
+  },
+  {
+    label: 'Tools & Platforms',
+    items: ['Git', 'GitHub', 'VS Code', 'NPM', 'Vercel', 'Vite', 'Figma', 'Prettier', 'Adobe Photoshop'],
+  },
+  {
+    label: 'Other',
+    items: ['WebSockets', 'JWT Authentication', 'RESTful APIs', 'SEO Optimization', 'Responsive Design'],
+  },
 ]

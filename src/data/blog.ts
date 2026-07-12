@@ -16,7 +16,7 @@ export const blogPosts: BlogPost[] = [
     id: "a-passion-or-nothing",
     title: "A Passion or Nothing",
     excerpt:
-      "Passion gives meaning to talent, while discipline transforms passion into mastery.",
+      "Passion gives meaning to talent, while discipline transforms passion into mastery",
 
     content: `
 Ever since I was a child, I envied people who were naturally skilled, especially those labeled as "prodigies." This admiration sparked a personal challenge: to discover my own innate talent. I attended various arts programs, constantly searching for that elusive spark. While I excelled in some areas, the experience led me to a profound realization about human nature.

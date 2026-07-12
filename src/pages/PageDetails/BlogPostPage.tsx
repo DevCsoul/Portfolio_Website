@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import PageContainer from '../../components/PageContainer'
 import { blogPosts } from '../../data/blog'
+import Footer from '../../components/Footer'
 
 export default function BlogPostPage() {
   const { id } = useParams<{ id: string }>()
@@ -26,6 +27,7 @@ export default function BlogPostPage() {
     .filter(Boolean)
 
   return (
+    <>
     <PageContainer>
       <article>
         <Link
@@ -40,10 +42,10 @@ export default function BlogPostPage() {
         </div>
 
         <h1 className="mt-4 font-mono text-3xl leading-tight font-bold text-white sm:text-4xl">
-          {post.title}
+          {post.title}<span className="text-orange">.</span>
         </h1>
 
-        <p className="mt-4 font-mono text-white/50 sm:text-lg">{post.excerpt}</p>
+        <p className="mt-4 font-mono text-white/50 sm:text-lg">{post.excerpt}<span className="text-orange/50">.</span></p>
 
         <hr className="mt-8 border-white/15" />
 
@@ -60,5 +62,7 @@ export default function BlogPostPage() {
         </div>
       </article>
     </PageContainer>
+    <Footer />
+    </>
   )
 }

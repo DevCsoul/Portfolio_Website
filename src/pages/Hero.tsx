@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="sticky top-0 z-0 h-screen w-full overflow-hidden bg-black">
+    <section id="hero" className="sticky top-0 z-0 h-screen w-full overflow-hidden bg-black scroll-mt-24">
       {/* Background */}
       <img
         src="/Hero-BG.png"

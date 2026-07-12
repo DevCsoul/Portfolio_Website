@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom'
 import PageContainer from '../../components/PageContainer'
 import BlogListItem from '../../components/BlogListItem'
 import { blogPosts } from '../../data/blog'
+import Footer from '../../components/Footer'
 
 export default function BlogPage() {
   return (
+    <>
     <PageContainer>
       <Link
         to="/#blog"
@@ -16,7 +18,7 @@ export default function BlogPage() {
       <h1 className="mt-6 font-mono text-3xl font-bold text-white sm:text-4xl">Blog<span className="text-orange/50">.</span></h1>
 
       <p className="mt-4 max-w-2xl font-mono text-sm leading-relaxed text-white/50 sm:text-base">
-        Thoughts, tutorials, and notes on AI, engineering, and building things<span className="text-orange/50">.</span>
+        Thoughts and insights from my journey in life & tech<span className="text-orange/50">.</span>
       </p>
 
       <ul className="mt-2">
@@ -25,5 +27,7 @@ export default function BlogPage() {
         ))}
       </ul>
     </PageContainer>
+    <Footer />
+    </>
   )
 }

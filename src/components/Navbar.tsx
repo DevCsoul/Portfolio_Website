@@ -39,9 +39,17 @@ export default function Navbar() {
           scrolled || menuOpen ? 'bg-black/30 shadow-lg shadow-black/30' : 'bg-white/5'
         }`}
       >
-        <span className="font-mono text-sm tracking-wide text-white/90">
+        <a
+          href="#hero"
+          onClick={(e) => {
+            e.preventDefault()
+            closeMenu()
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }}
+          className="font-mono text-sm tracking-wide text-white/90 transition-colors duration-300 hover:text-white/50"
+        >
           Kurt M.
-        </span>
+        </a>
 
         {/* Full nav links, only shown once there's room for them */}
         <ul className="hidden items-center gap-6 font-mono text-sm tracking-wide text-white/80 lg:flex xl:gap-8">
@@ -49,7 +57,7 @@ export default function Navbar() {
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
-                className="transition-colors duration-300 hover:text-orange"
+                className="transition-colors duration-300 hover:text-white/50"
               >
                 {link}
               </a>
@@ -59,7 +67,7 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden font-mono text-sm tracking-wide text-white/90 transition-colors duration-300 hover:text-white lg:inline-block"
+          className="hidden font-mono text-sm tracking-wide text-white/90 transition-colors duration-300 hover:text-white/50 lg:inline-block"
         >
           Contact
         </a>

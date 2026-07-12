@@ -7,7 +7,7 @@ type StackPillsProps = {
 
 export default function StackPills({ items, showMoreLink = true }: StackPillsProps) {
   return (
-    <div className="mt-8 flex flex-wrap gap-3">
+    <div className="mt-4 flex flex-wrap gap-3">
       {items.map((item) => (
         <span
           key={item}
