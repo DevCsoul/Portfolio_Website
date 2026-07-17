@@ -24,11 +24,11 @@ export default function BlogPostPage() {
       <PageContainer>
         <Link
           to="/blog"
-          className="font-mono text-sm text-white/40 transition-colors duration-300 hover:text-orange"
+          className="font-mono text-sm text-fg/40 transition-colors duration-300 hover:text-orange"
         >
           <i className="fa-solid fa-angle-left"></i> all posts
         </Link>
-        <p className="mt-12 font-mono text-white/60">This post couldn't be found.</p>
+        <p className="mt-12 font-mono text-fg/60">This post couldn't be found.</p>
       </PageContainer>
     )
   }
@@ -44,22 +44,22 @@ export default function BlogPostPage() {
       <article>
         <Link
           to="/blog"
-          className="font-mono text-sm text-white/40 transition-colors duration-300 hover:text-orange"
+          className="font-mono text-sm text-fg/40 transition-colors duration-300 hover:text-orange"
         >
           <i className="fa-solid fa-angle-left"></i> all posts
         </Link>
 
-        <div className="mt-8 font-mono text-xs tracking-[0.15em] text-white/40 uppercase sm:text-sm">
-          {post.date} <span className="text-white/25">·</span> {post.readTime}
+        <div className="mt-8 font-mono text-xs tracking-[0.15em] text-fg/40 uppercase sm:text-sm">
+          {post.date} <span className="text-fg/25">·</span> {post.readTime}
         </div>
 
-        <h1 className="mt-4 font-mono text-3xl leading-tight font-bold text-white sm:text-4xl">
+        <h1 className="mt-4 font-mono text-3xl leading-tight font-bold text-fg sm:text-4xl">
           {post.title}<span className="text-orange">.</span>
         </h1>
 
-        <p className="mt-4 font-mono text-white/50 sm:text-lg">{post.excerpt}<span className="text-orange/50">.</span></p>
+        <p className="mt-4 font-mono text-fg/50 sm:text-lg">{post.excerpt}<span className="text-orange/50">.</span></p>
 
-        <hr className="mt-8 border-white/15" />
+        <hr className="mt-8 border-fg/15" />
 
         <img
           src={post.image}
@@ -67,21 +67,21 @@ export default function BlogPostPage() {
           className="mt-8 max-h-96 w-full rounded-xl object-cover"
         />
 
-        <div className="mt-10 flex flex-col gap-6 font-mono text-[clamp(1rem,2vw,1.15rem)] leading-relaxed text-white/85">
+        <div className="mt-10 flex flex-col gap-6 font-mono text-[clamp(1rem,2vw,1.15rem)] leading-relaxed text-fg/85">
           {paragraphs.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
         </div>
 
-        <hr className="mt-10 border-white/15" />
+        <hr className="mt-10 border-fg/15" />
 
         <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <span className="font-mono text-sm text-white/40">Enjoyed this? Share it around.</span>
+          <span className="font-mono text-sm text-fg/40">Enjoyed this? Share it around.</span>
 
           <button
             type="button"
             onClick={handleCopyLink}
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 font-mono text-sm tracking-wide text-white/90 transition-colors duration-300 hover:border-orange hover:text-orange"
+            className="inline-flex items-center gap-2 rounded-full border border-fg/15 px-5 py-2.5 font-mono text-sm tracking-wide text-fg/90 transition-colors duration-300 hover:border-orange hover:text-orange"
           >
             {copied ? 'Link copied' : 'Copy link'}
             <i className={copied ? 'fa-solid fa-check' : 'fa-solid fa-link'}></i>

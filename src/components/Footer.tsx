@@ -2,22 +2,22 @@ import { contactEmail, resumeFile, socialLinks } from '../data/contact'
 
 export default function Footer() {
   return (
-    <footer id="contact" className="relative z-10 w-full scroll-mt-24 bg-[#242424] px-6 pt-10 pb-5 sm:px-10 lg:px-20">
+    <footer id="contact" className="relative z-10 w-full scroll-mt-24 bg-surface px-6 pt-10 pb-5 sm:px-10 lg:px-20">
       <div className="mx-auto max-w-4xl">
         {/* Top divider */}
-        <div className="border-t border-white/10"></div>
+        <div className="border-t border-fg/10"></div>
 
         {/* Main contact content */}
         <div className="mt-10 flex flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
           <div className="animate-fade-in-up-slow opacity-0">
-            <p className="font-mono text-[clamp(1.5rem,4vw,2.5rem)] leading-tight text-white/90">
+            <p className="font-mono text-[clamp(1.5rem,4vw,2.5rem)] leading-tight text-fg/90">
               Let's build <span className="text-orange">something</span>
               <br />
               great together.
             </p>
             <a
               href={`mailto:${contactEmail}`}
-              className="mt-5 inline-flex items-center gap-2 font-mono text-sm text-white/60 transition-colors duration-300 hover:text-orange"
+              className="mt-5 inline-flex items-center gap-2 font-mono text-sm text-fg/60 transition-colors duration-300 hover:text-orange"
             >
               <i className="fa-solid fa-envelope"></i>
               {contactEmail}
@@ -37,7 +37,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer noopener"
                   aria-label={social.label}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-white/70 transition-all duration-300 hover:border-orange hover:text-orange"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-fg/15 text-fg/70 transition-all duration-300 hover:border-orange hover:text-orange"
                 >
                   <i className={social.icon}></i>
                 </a>
@@ -48,7 +48,7 @@ export default function Footer() {
             <a
               href={resumeFile}
               download
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 font-mono text-sm tracking-wide text-white/90 transition-colors duration-300 hover:border-orange hover:text-orange"
+              className="inline-flex items-center gap-2 rounded-full border border-fg/15 px-5 py-2.5 font-mono text-sm tracking-wide text-fg/90 transition-colors duration-300 hover:border-orange hover:text-orange"
             >
               Download Resume
               <i className="fa-solid fa-arrow-down"></i>
@@ -57,7 +57,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-16 flex items-center justify-center font-mono text-xs tracking-wide text-white/40">
+        <div className="mt-16 flex items-center justify-center font-mono text-xs tracking-wide text-fg/40">
           <span>&copy; 2026 Kurt Montera.</span>
         </div>
       </div>

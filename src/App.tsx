@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
+import FloatingThemeToggle from './components/FloatingThemeToggle'
 import Home from './pages/Home'
 import AboutPage from './pages/PageDetails/AboutPage'
 import BlogPage from './pages/PageDetails/BlogPage'
@@ -10,7 +11,7 @@ import StackPage from './pages/PageDetails/StackPage'
 
 function App() {
   return (
-    <div className="bg-black">
+    <div className="bg-canvas">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,6 +22,7 @@ function App() {
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/stack" element={<StackPage />} />
       </Routes>
+      <FloatingThemeToggle />
     </div>
   )
 }

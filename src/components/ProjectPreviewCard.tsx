@@ -14,9 +14,9 @@ export default function ProjectPreviewCard({ project }: ProjectPreviewCardProps)
   return (
     <Link
       to="/projects"
-      className="group flex flex-col overflow-hidden rounded-lg border border-white/15 bg-black/20 transition-colors duration-300 hover:border-white/40"
+      className="group flex flex-col overflow-hidden rounded-lg border border-fg/5 bg-black/4 transition-colors duration-300 hover:border-fg/15"
     >
-      <div className="relative aspect-video w-full overflow-hidden border-b border-white/15 bg-black/40">
+      <div className="relative aspect-video w-full overflow-hidden border-b border-fg/15 bg-black/40">
         {project.image ? (
           <img
             src={project.image}
@@ -25,7 +25,7 @@ export default function ProjectPreviewCard({ project }: ProjectPreviewCardProps)
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center">
-            <span className="font-mono text-xs tracking-[0.2em] text-white/25 uppercase">
+            <span className="font-mono text-xs tracking-[0.2em] text-fg/25 uppercase">
               Preview coming soon
             </span>
           </div>
@@ -34,25 +34,25 @@ export default function ProjectPreviewCard({ project }: ProjectPreviewCardProps)
 
       <div className="flex flex-1 flex-col p-4 sm:p-5">
         <div className="flex items-center justify-between gap-2">
-          <h3 className="font-mono text-base font-bold text-white sm:text-lg">{project.title}</h3>
-          <span className="shrink-0 font-mono text-[10px] tracking-[0.1em] text-white/40 uppercase sm:text-xs">
+          <h3 className="font-mono text-base font-bold text-fg sm:text-lg">{project.title}</h3>
+          <span className="shrink-0 font-mono text-[10px] tracking-[0.1em] text-fg/40 uppercase sm:text-xs">
             {project.type}
           </span>
         </div>
 
-        <p className="mt-2 font-mono text-sm leading-relaxed text-white/50">{project.summary}</p>
+        <p className="mt-2 font-mono text-sm leading-relaxed text-fg/50">{project.summary}</p>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {visibleTags.map((tag) => (
             <span
               key={tag}
-              className="rounded-full border border-white/15 px-2.5 py-1 font-mono text-[11px] text-white/60"
+              className="rounded-full border border-fg/15 px-2.5 py-1 font-mono text-[11px] text-fg/60"
             >
               {tag}
             </span>
           ))}
           {hiddenCount > 0 && (
-            <span className="rounded-full border border-dashed border-white/25 px-2.5 py-1 font-mono text-[11px] text-white/40">
+            <span className="rounded-full border border-dashed border-fg/25 px-2.5 py-1 font-mono text-[11px] text-fg/40">
               +{hiddenCount}
             </span>
           )}

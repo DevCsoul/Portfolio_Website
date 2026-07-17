@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section id="hero" className="sticky top-0 z-0 h-screen w-full overflow-hidden bg-black scroll-mt-24">
+    <section id="hero" className="sticky top-0 z-0 h-screen w-full overflow-hidden bg-black scroll-mt-24 snap-start">
       {/* Background */}
       <img
         src="/Hero-BG.png"
@@ -54,8 +54,8 @@ export default function Hero() {
 
       {/* Subtitle */}
       <div className="absolute bottom-20 left-1/2 z-30 -translate-x-1/2 w-[80%]">
-        <p className="animate-fade-in delay-300 font-mono tracking-[0.2em] text-white/70 text-center text-[clamp(1em,5vw,3em)]">
-          A Frontend Developer
+        <p className="animate-fade-in delay-300 font-mono tracking-[0.2em] text-white/70 text-center text-[clamp(0.5em,5vw,2.5em)]">
+          a Full-stack Web Developer
         </p>
       </div>
 

@@ -5,7 +5,7 @@ import { experience, stack } from '../data/experience'
 
 export default function ExperienceStack() {
   return (
-    <section className="relative z-10 w-full bg-[#242424] px-6 pt-20 pb-24 sm:px-10 lg:px-20">
+    <section className="relative z-10 w-full bg-surface px-6 pt-20 pb-24 sm:px-10 lg:px-20">
       <div className="mx-auto max-w-4xl">
         <div id="experiences" className="scroll-mt-24">
           <SectionHeader index="04" title="Experience" linkTo="/experience" linkLabel="FULL HISTORY" />

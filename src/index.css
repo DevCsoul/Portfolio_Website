@@ -6,9 +6,22 @@
 
   --color-orange: #ef3801;
 
+  /* Semantic, theme-aware tokens. Values below are the dark-mode defaults;
+     [data-theme="light"] overrides them further down. Navbar and Hero stay
+     on the literal white/black classes on purpose, so they're always dark. */
+  --color-canvas: #000000;
+  --color-surface: #242424;
+  --color-fg: #FAF9F6;
+
   --animate-fade-in: fade-in 1s ease-out forwards;
   --animate-fade-in-up: fade-in-up 1.2s ease-out forwards;
   --animate-fade-in-up-slow: fade-in-up 1s ease-out forwards;
+}
+
+[data-theme="light"] {
+  --color-canvas: #f2f1ec;
+  --color-surface: #FAF9F6;
+  --color-fg: #18181b;
 }
 
 @keyframes fade-in {
@@ -23,4 +36,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Snaps the hero -> about transition to a clean cut, so scrolling never
+     rests half-way with a sliver of hero still showing above the about
+     section. Proximity (not mandatory) keeps normal scrolling elsewhere free. */
+  scroll-snap-type: y proximity;
 }
