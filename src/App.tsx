@@ -8,6 +8,7 @@ import BlogPostPage from './pages/PageDetails/BlogPostPage'
 import ProjectsPage from './pages/PageDetails/ProjectsPage'
 import ExperiencePage from './pages/PageDetails/ExperiencePage'
 import StackPage from './pages/PageDetails/StackPage'
+import ToastyBitePage from './pages/PageDetails/ToastyBitePage'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/stack" element={<StackPage />} />
+        <Route path="/toasty-bite" element={<ToastyBitePage />} />
       </Routes>
       <FloatingThemeToggle />
     </div>

@@ -12,6 +12,7 @@ export default function FloatingThemeToggle() {
   const { theme, setTheme } = useTheme()
   const { pathname } = useLocation()
   const isHome = pathname === '/'
+  const isToastyBite = pathname === '/toasty-bite'
 
   // On every other route the surface background already fills the whole
   // viewport, so the toggle can just be visible. On the home route it stays
@@ -49,6 +50,8 @@ export default function FloatingThemeToggle() {
       window.removeEventListener('scroll', onScroll)
     }
   }, [isHome])
+
+  if (isToastyBite) return null
 
   return (
     <div
