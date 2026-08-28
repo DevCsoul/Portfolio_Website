@@ -7,7 +7,7 @@ import Footer from '../../components/Footer'
 export default function ProjectsPage() {
   return (
     <>
-    <PageContainer>
+    <PageContainer footer={<Footer minimal />}>
       <Link
         to="/#projects"
         className="font-mono text-sm text-fg/40 transition-colors duration-300 hover:text-orange"
@@ -29,7 +29,6 @@ export default function ProjectsPage() {
         ))}
       </div>
     </PageContainer>
-    <Footer />
     </>
   )
 }

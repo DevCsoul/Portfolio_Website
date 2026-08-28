@@ -7,7 +7,7 @@ import Footer from '../../components/Footer'
 export default function StackPage() {
   return (
     <>
-    <PageContainer>
+    <PageContainer footer={<Footer minimal />}>
           <Link
             to="/#stack"
             className="font-mono text-sm text-fg/40 transition-colors duration-300 hover:text-orange"
@@ -31,8 +31,7 @@ export default function StackPage() {
             </div>
           ))}
         </div>
-        </PageContainer>
-        <Footer />
+      </PageContainer>
     </>
   )
 }

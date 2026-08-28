@@ -7,7 +7,7 @@ import Footer from '../../components/Footer'
 export default function ExperiencePage() {
   return (
     <>
-    <PageContainer>
+    <PageContainer footer={<Footer minimal />}>
       <Link
         to="/#experiences"
         className="font-mono text-sm text-fg/40 transition-colors duration-300 hover:text-orange"
@@ -23,7 +23,6 @@ export default function ExperiencePage() {
 
       <ExperienceTimeline entries={experience} />
     </PageContainer>
-    <Footer />
     </>
   )
 }

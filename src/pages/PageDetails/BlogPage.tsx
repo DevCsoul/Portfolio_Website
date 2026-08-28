@@ -24,7 +24,7 @@ export default function BlogPage() {
 
   return (
     <>
-    <PageContainer>
+    <PageContainer footer={<Footer minimal />}>
       <Link
         to="/#blog"
         className="font-mono text-sm text-fg/40 transition-colors duration-300 hover:text-orange"
@@ -79,7 +79,6 @@ export default function BlogPage() {
         ))}
       </ul>
     </PageContainer>
-    <Footer />
     </>
   )
 }

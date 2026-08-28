@@ -1,4 +1,4 @@
-export const contactEmail = 'kurtmontera@gmail.com'
+export const contactEmail = 'kurtmontera25@gmail.com'
 
 export const socialLinks = [
   {

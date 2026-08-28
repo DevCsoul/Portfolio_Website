@@ -1,4 +1,5 @@
 import passionThumbnail from "../assets/blog/a_passion_or_nothing.png";
+import overclockedThumbnail from "../assets/blog/Overclocked_into_Nothingness.png";
 
 export type BlogPost = {
   id: string;
@@ -36,6 +37,26 @@ Stop being so harsh on yourself. You have plenty of time to fall and get back up
     date: "July 2026",
     readTime: "4 min read",
     image: passionThumbnail,
+    tags: ["Mindset", "Productivity", "Self Growth"],
+  },
+  {
+    id: "overclocked_into_Nothingness",
+    title: "Overclocked into Nothingness",
+    excerpt:
+      "Burnt out and lost, I learned that while passion gives talent meaning, discipline turns it into mastery.",
+
+    content: `
+Stepping off the graduation stage felt like the start of a smoother, clearer chapter, but this year has brought unexpected storms and an overwhelming sense of uncertainty. Instead of feeling wiser, more grounded, or more prepared as time passes, it feels as though my momentum has completely stalled. The sharp focus, creativity, and inner drive that once defined me feel distant right now, making it difficult to recognize the person looking back at me or to see a confident path forward.
+
+Being unemployed for these past two months has amplified everything, making each day feel impossibly long and heavy. It has triggered an exhausting cycle of overthinking, isolation, and deep second-guessing. It is painful to feel like this internal noise is spilling over into my personal life, creating distance with the friends and family I care about most. Every attempt to force a spark, distract myself, or simply relax seems to backfire, leaving my mind running at high speed on an empty tank—overclocked, yet producing nothing.
+
+The regret over squandered time and missteps feels heavy, and the urge to hit a reset button is overwhelming. It is easy to look back and wish I could guide my past self toward better choices, but the weight of present consequences is what demands my attention now. Right now, the immediate need isn't to force a dramatic breakthrough or fight a battle on zero energy, but to acknowledge the profound exhaustion of this period and allow room for genuine rest.
+
+    `,
+
+    date: "August 2026",
+    readTime: "2 min read",
+    image: overclockedThumbnail,
     tags: ["Mindset", "Productivity", "Self Growth"],
   },
 ];

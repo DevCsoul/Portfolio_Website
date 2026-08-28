@@ -1,6 +1,22 @@
 import { contactEmail, resumeFile, socialLinks } from '../data/contact'
 
-export default function Footer() {
+interface FooterProps {
+  /**
+   * When true, renders only the bottom copyright bar (used on detail pages).
+   * When false/omitted, renders the full footer (used on the home page).
+   */
+  minimal?: boolean
+}
+
+export default function Footer({ minimal = false }: FooterProps) {
+  if (minimal) {
+    return (
+      <div className="flex items-center justify-center px-6 py-4 font-mono text-xs tracking-wide text-fg/40">
+        <span>Kurt Montera &copy;2026</span>
+      </div>
+    )
+  }
+
   return (
     <footer id="contact" className="relative z-10 w-full scroll-mt-24 bg-surface px-6 pt-10 pb-5 sm:px-10 lg:px-20">
       <div className="mx-auto max-w-4xl">

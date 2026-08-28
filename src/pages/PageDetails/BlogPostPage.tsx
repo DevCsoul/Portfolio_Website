@@ -40,7 +40,7 @@ export default function BlogPostPage() {
 
   return (
     <>
-    <PageContainer>
+    <PageContainer footer={<Footer minimal />}>
       <article>
         <Link
           to="/blog"
@@ -89,7 +89,6 @@ export default function BlogPostPage() {
         </div>
       </article>
     </PageContainer>
-    <Footer />
     </>
   )
 }
