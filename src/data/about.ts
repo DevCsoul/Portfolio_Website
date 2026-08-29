@@ -1,7 +1,7 @@
 export const aboutIntro = [
   "I'm Kurt Audrey D. Montera",
   "I'm a Front-end Web Developer based in Tacloban City, Leyte, Philippines",
-  'I design and develop clean, responsive web applications, combining intuitive interfaces with thoughtful frontend engineering to build fast, polished digital experiences',
+  'I love turning good designs into responsive, fast-loading web apps. For me, it\'s all about writing clean frontend code to create layouts that are genuinely easy and enjoyable to navigate',
 ]
 
 export const aboutParagraphs = [
@@ -11,7 +11,9 @@ export const aboutParagraphs = [
 
   "My foundation in visual arts and animation gave me a distinct edge early on. Rather than seeing a disconnect between arts and programming, I realized that code is simply another medium for creative problem-solving",
 
-  "Today, my core focus lies entirely in Frontend Development, Web Design, and UI/UX. This intersection allows me to craft intuitive, beautifully polished digital experiences with meticulous attention to detail. Balancing aesthetic polish with intuitive user flows helped me consistently stand out in university web development competitions, securing 2nd place in 2024 and 1st place in 2025",
+  "Today, my core focus lies entirely in Frontend Development, Web Design, and UI/UX. This intersection allows me to craft intuitive, beautifully polished digital experiences with meticulous attention to detail",
+
+  "Balancing aesthetic polish with intuitive user flows helped me consistently stand out in university web development competitions, securing 2nd place in 2024 and 1st place in 2025",
 
   "My goal is to craft fast, responsive web applications that prioritize effortless user experiences through thoughtful frontend craft and modern design standards",
 
