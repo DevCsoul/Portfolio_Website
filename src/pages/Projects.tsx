@@ -10,8 +10,8 @@ export default function Projects() {
   return (
     <HomeSection id="projects" index="02" title="Projects" linkTo="/projects" linkLabel="ALL PROJECTS">
       <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {recentProjects.map((project) => (
-          <ProjectPreviewCard key={project.id} project={project} />
+        {recentProjects.map((project, i) => (
+          <ProjectPreviewCard key={project.id} project={project} index={i + 1} />
         ))}
       </div>
     </HomeSection>

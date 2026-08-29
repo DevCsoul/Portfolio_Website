@@ -6,6 +6,7 @@ import AboutPage from './pages/PageDetails/AboutPage'
 import BlogPage from './pages/PageDetails/BlogPage'
 import BlogPostPage from './pages/PageDetails/BlogPostPage'
 import ProjectsPage from './pages/PageDetails/ProjectsPage'
+import ProjectDetailPage from './pages/PageDetails/ProjectDetailPage'
 import ExperiencePage from './pages/PageDetails/ExperiencePage'
 import StackPage from './pages/PageDetails/StackPage'
 import ToastyBitePage from './pages/PageDetails/ToastyBitePage'
@@ -20,6 +21,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogPostPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:id" element={<ProjectDetailPage />} />
         <Route path="/experience" element={<ExperiencePage />} />
         <Route path="/stack" element={<StackPage />} />
         <Route path="/toasty-bite" element={<ToastyBitePage />} />
