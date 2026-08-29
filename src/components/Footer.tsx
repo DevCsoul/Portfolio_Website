@@ -74,7 +74,7 @@ export default function Footer({ minimal = false }: FooterProps) {
 
         {/* Bottom bar */}
         <div className="mt-16 flex items-center justify-center font-mono text-xs tracking-wide text-fg/40">
-          <span>&copy; 2026 Kurt Montera.</span>
+          <span>Kurt Montera. &copy;2026 </span>
         </div>
       </div>
     </footer>

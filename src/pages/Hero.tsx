@@ -55,7 +55,7 @@ export default function Hero() {
       {/* Subtitle */}
       <div className="absolute bottom-20 left-1/2 z-30 -translate-x-1/2 w-[80%]">
         <p className="animate-fade-in delay-300 font-mono tracking-[0.2em] text-white/70 text-center text-[clamp(0.5em,5vw,2.5em)]">
-          a Full-stack Web Developer
+          a Front-end Web Developer
         </p>
       </div>
 

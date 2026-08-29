@@ -43,7 +43,7 @@ Stop being so harsh on yourself. You have plenty of time to fall and get back up
     id: "overclocked_into_Nothingness",
     title: "Overclocked into Nothingness",
     excerpt:
-      "Burnt out and lost, I learned that while passion gives talent meaning, discipline turns it into mastery.",
+      "Burnt out and lost, I learned that while passion gives talent meaning, discipline turns it into mastery",
 
     content: `
 Stepping off the graduation stage felt like the start of a smoother, clearer chapter, but this year has brought unexpected storms and an overwhelming sense of uncertainty. Instead of feeling wiser, more grounded, or more prepared as time passes, it feels as though my momentum has completely stalled. The sharp focus, creativity, and inner drive that once defined me feel distant right now, making it difficult to recognize the person looking back at me or to see a confident path forward.
